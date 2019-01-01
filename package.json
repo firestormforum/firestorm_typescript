@@ -1,0 +1,44 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node -- ./src/index.ts",
+    "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.test.ts --reporter tap"
+  },
+  "dependencies": {
+    "apollo-server": "^2.1.0",
+    "bcrypt": "^3.0.1",
+    "global": "^4.3.2",
+    "graphql": "^14.0.2",
+    "graphql-subscriptions": "^1.0.0",
+    "graphql-tools": "^4.0.0",
+    "graphql-type-datetime": "^0.2.2",
+    "http": "^0.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "merge-graphql-schemas": "^1.5.7",
+    "mysql": "^2.14.1",
+    "path": "^0.12.7",
+    "pg": "^7.5.0",
+    "reflect-metadata": "^0.1.10",
+    "subscriptions-transport-ws": "^0.9.15",
+    "typeorm": "0.2.7",
+    "typescript": "^3.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.6",
+    "@types/graphql": "^14.0.2",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^8.0.29",
+    "chai": "^4.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "ts-node": "3.3.0",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1"
+  }
+}
